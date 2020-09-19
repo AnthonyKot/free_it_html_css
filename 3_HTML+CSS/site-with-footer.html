@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<header>
+<title>Page Title</title>
+  <style>
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Poppins';
+      background-color: white;
+      color: #283B48;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+
+    .logo img {
+      max-height: 35px;
+      padding: 10px 0px;
+    }
+
+    .logo, nav  {
+      display: inline-block;
+    }
+
+    nav {
+      float: right;
+      padding: 20px 0px;
+    }
+
+    nav a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: lighter;
+      color: #283B48;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+
+    nav a.active, nav a:hover {
+      color: #EB8923;
+    }
+
+    #hero {
+      background-image:  url(https://nyc3.digitaloceanspaces.com/duomly/project-files/courseID17/hero.png);
+      background-size: cover;
+      padding: 13% 0 120px 0;
+      text-align: center;
+      color: white;
+    }
+
+    #hero h1 {
+      font-weight: 900;
+    }
+
+    #hero h3 {
+      font-weight: 600;
+    }
+
+    .orange-button {
+      background-color: #EB8923;
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      border: 0px;
+      border-radius: 5px;
+      padding: 10px 15px;
+    }
+
+    .orange-button:hover {
+      cursor: pointer;
+    }
+
+    #courses {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    #courses h3 {
+      color: #EB8923;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .subheader {
+      font-size: 12px;
+      font-weight: 300;
+      margin-top: 0;
+      font-style: italic;
+    }
+
+    .courses-row {
+      margin-top: 40px;
+    }
+
+    .course {
+      width: 25%;
+      margin-right: 3%;
+      margin-left: 3%;
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 20px;
+      border: 2px solid #f6f6f6;
+    }
+
+    .course:first-child {
+      margin-left: 0;
+    }
+
+    .course:last-child {
+      margin-right: 0;
+    }
+
+    .course h5 {
+      text-transform: uppercase;
+      font-size: 0.7em;
+    }
+
+    .course p {
+      font-size: 12px;
+      font-weight: 300;
+    }
+
+    footer {
+      background-color: #283B48;
+      color: white;
+    }
+
+    .contact-info {
+      width: 100%;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .company-data, .company-address, .footer-logo {
+      width: 30%;
+      display: inline-block;
+    }
+
+    .company-data {
+      float: left;
+      text-align: left;
+    }
+
+    .company-address {
+      float: right;
+      text-align: right;
+    }
+
+    .company-address .data, .company-data .data {
+      display: inline-block;
+      font-weight: 500;
+      vertical-align: middle;
+      font-size: 12px;
+    }
+
+    .company-address .data span, .company-data .data span {
+      display: block;
+    }
+
+    .company-address img, .company-data img {
+      vertical-align: middle;
+      height: 40px;
+      margin: 10px;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-bottom: 10px;
+      font-size: 12px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .container {
+        box-sizing: border-box;
+        padding: 0 50px;
+        width: auto;
+      }
+      header {
+        text-align: center;
+      }
+      .logo {
+        display: block;
+        text-align: center;
+      }
+      nav {
+        float: none;
+      }
+      .course {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+  <div class="container">
+    <a href="#" class="logo">
+      <img src="https://nyc3.digitaloceanspaces.com/duomly/project-files/courseID17/logo.png" alt="Speak Spanish logo" />
+    </a>
+    <nav>
+      <a class="active" href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+</header>
+<section id="hero">
+  <div class="container">
+    <h1>New Spanish Courses for Adults</h1>
+    <h3>starting from September</h3>
+    <button class="orange-button">Contact us</button>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="contact-info">
+      <div class="company-data">
+        <img src="https://nyc3.digitaloceanspaces.com/duomly/project-files/courseID17/school-building.png" alt="Speak Spanish Data" />
+        <div class="data">
+          <span>Speak Spanish Ltd</span>
+          <span>speak@spanish.com</span>
+          <span>+44 765 765 000</span>
+        </div>
+      </div>
+      <div class="footer-logo">
+        <img src="https://nyc3.digitaloceanspaces.com/duomly/project-files/courseID17/logo-white.png" alt="Speak Spanish" />
+      </div>
+      <div class="company-address">
+        <div class="data">
+          <span>Lincoln Square 273</span>
+          <span>192W C6 London</span>
+          <span>United Kingdom</span>
+        </div>
+        <img src="https://nyc3.digitaloceanspaces.com/duomly/project-files/courseID17/location.png" alt="Speak School Location" />
+      </div>
+    </div>
+    <p class="copyright">Copyright SpeakSpanish 2019</p>
+  </div>
+</footer>

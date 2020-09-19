@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<header>
+<title>Page Title</title>
+<style>
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins';
+  background-color: white;
+  color: #283B48;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.logo img {
+  max-height: 35px;
+  padding: 10px 0px;
+}
+
+.logo, nav  {
+  display: inline-block;
+}
+
+nav {
+  float: right;
+  padding: 20px 0px;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #283B48;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+nav a.active, nav a:hover {
+  color: #EB8923;
+}
+
+#hero {
+  background-image:  url(https://nyc3.digitaloceanspaces.com/duomly/project-files/courseID17/hero.png);
+  background-size: cover;
+  padding: 13% 0 120px 0;
+  text-align: center;
+  color: white;
+}
+
+#hero h1 {
+  font-weight: 900;
+}
+
+#her h3 {
+  font-weight: 600;
+}
+
+.orange-button {
+  background-color: #EB8923;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.orange-button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    box-sizing: border-box;
+    padding: 0 50px;
+    width: auto;
+  }
+  header {
+    text-align: center;
+  }
+  .logo {
+    display: block;
+    text-align: center;
+  }
+  nav {
+    float: none;
+  }
+}
+
+</style>
+
+<div class="container">
+    <a href="#" class="logo">
+      <img src="https://nyc3.digitaloceanspaces.com/duomly/project-files/courseID17/logo.png" alt="Speak Spanish logo" />
+    </a>
+    <nav>
+      <a class="active" href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+</div>
+
+</header>
+
+
+
+
+<section id="hero">
+  <div class="container">
+    <h1>New Spanish Courses for Adults</h1>
+    <h3>starting from September</h3>
+    <button class="orange-button">Contact us</button>
+  </div>
+</section>
+
+</html>
